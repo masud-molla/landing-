@@ -1,126 +1,265 @@
-## masud_s_application2
+<a name="readme-top"></a>
 
-Generated with ❤️ from [DhiWise](https://www.dhiwise.com)
+<p align="center">
+<img src="https://github.com/ladunjexa/nike-landing-page/blob/main/public/vite.svg?raw=true" width="10%" />
+</p>
+<p align="center">
+<!-- Badges -->
+  <a href="https://github.com/ladunjexa">
+    <img src="https://custom-icon-badges.demolab.com/badge/made%20by%20-ladunjexa-556bf2?style=flat-square&logo=github&logoColor=white&labelColor=101827" alt="made by @ladunjexa" />
+  </a>
+  <a href="https://github.com/ladunjexa/nike-landing-page/blob/master/LICENSE">
+    <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="license" />
+  </a>
+  <a href="https://github.com/ladunjexa/nike-landing-page/graphs/contributors">
+    <img src="https://img.shields.io/github/contributors/ladunjexa/nike-landing-page" alt="contributors" />
+  </a>
+  <a href="">
+    <img src="https://img.shields.io/github/last-commit/ladunjexa/nike-landing-page" alt="last update" />
+  </a>
+  <a href="https://github.com/ladunjexa/nike-landing-page/network/members">
+    <img src="https://img.shields.io/github/forks/ladunjexa/nike-landing-page" alt="forks" />
+  </a>
+  <a href="https://github.com/ladunjexa/nike-landing-page/stargazers">
+    <img src="https://img.shields.io/github/stars/ladunjexa/nike-landing-page" alt="stars" />
+  </a>
+  <a href="https://github.com/ladunjexa/nike-landing-page/issues/">
+    <img src="https://img.shields.io/github/issues/ladunjexa/nike-landing-page" alt="open issues" />
+  </a>
+  <a href="https://github.com/ladunjexa/nike-landing-page/issues/">
+    <img src="https://img.shields.io/badge/PRs-welcome-pink.svg" alt="prs welcome" />
+  </a>
+</p>
 
-## Description
+<h1 align="center">Nike Website</h1>
 
-- This React application is built using [Vite](https://vitejs.dev/).
-- It uses [Tailwind CSS](https://tailwindcss.com/)
-- The application is generated in JavaScript.
+Dive into the world of Tailwind CSS, Incredible Frontend Nike website built with Vite.js using TypeScript & React 🪐
 
-## Pre-requisites
+#### [View Demo](https://nike-web-x.vercel.app/)
 
-- [git](https://git-scm.com/) - v2.13 or greater
-- [NodeJS](https://nodejs.org/en/) - v16 or greater
-- [npm](https://www.npmjs.com/) - v6 or greater
+## Table of Contents
 
-## Running in dev environment
+- [Introduction](#star2-introduction)
+  - [Folder Structure](#folder-structure)
+- [Technologies Used](#space_invader-technologies-used)
+- [Getting Started](#toolbox-getting-started)
+  - [Installation and Run Locally](#gear-installation-and-run-locally)
+  - [React + TypeScript + Vite](#react--typescript--vite)
+    - [Expanding the ESLint configuration](#expanding-the-eslint-configuration)
+- [Screenshots](#camera-screenshots)
+- [Contributing](#wave-contributing)
+- [License](#warning-license)
+- [Contact](#handshake-contact)
 
-1.  `cd YOUR_APPLICATION`
-2.  `npm install`
-3.  `npm start`
+## :star2: Introduction
 
-## .env file
+Nike Website is a web application built with Vite.js using TypeScript & React. The application is a landing page for Nike website. The application is responsive and works great on mobile devices and tablets. The application is designed using Tailwind CSS and it is deployed on Vercel.
 
-This file contains various environment variables that you can configure.
+### Folder Structure
 
-**VITE_GOOGLE_CLIENT_ID** - Your Google Client ID
-
-## Folder Structure
+<b>Nike Website</b> code folder structure is as follows:
 
 ```
-.
+nike-landing-page/
+├── src/
+├   ├── assets/
+├   ├   ├── icons/
+├   ├   ├   ├── [[...]].svg
+├   ├   ├   └── index.ts
+├   ├   ├── images/
+├   ├   ├   ├── [[...]].{svg/png/jpeg}
+├   ├   ├   └── index.ts
+├   ├   └── react.svg
+├   ├── components/
+├   ├   ├── Button.tsx
+├   ├   ├── Nav.tsx
+├   ├   ├── PopularProductCard.tsx
+├   ├   ├── ReviewCard.tsx
+├   ├   ├── ServiceCard.tsx
+├   ├   └── ShoeCard.tsx
+├   ├── sections/
+├   ├   ├── CustomerReviews.tsx
+├   ├   ├── Footer.tsx
+├   ├   ├── Hero.tsx
+├   ├   ├── PopularProducts.tsx
+├   ├   ├── Services.tsx
+├   ├   ├── SpecialOffer.tsx
+├   ├   ├── Subscribe.tsx
+├   ├   ├── SuperQuality.tsx
+├   ├   └── index.ts
+├   └── constants/
+├       └── index.ts
+├── public/
+├   ├── favicon.ico
+├   └── vite.svg
+├── .eslintrc.cjs
+├── .gitignore
+├── index.html
 ├── package.json
 ├── postcss.config.js
-├── vite.config.js
-├── index.html
-├── public
-│   ├── assets
-│   │   └── images --------- All Project Images
-│   ├── favicon.ico
-│   ├── manifest.json
-│   └── robots.txt
-├── README.md
-├── src
-│   ├── App.jsx
-│   ├── assets
-│   │   └── fonts ---------- Project fonts
-│   ├── components --------- UI and Detected Common Components
-│   ├── constants ---------- Project constants, eg: string consts
-│   ├── hooks -------------- Helpful Hooks
-│   ├── index.jsx
-│   ├── pages -------------- All route pages
-│   ├── Routes.jsx ---------- Routing
-│   ├── styles
-│   │   ├── index.css ------ Other Global Styles
-│   │   └── tailwind.css --- Default Tailwind modules
-│   └── util
-│       └── index.jsx ------- Helpful utils
-└── tailwind.config.js ----- Entire theme config, colors, fonts etc.
+├── tailwind.config.js
+├── tsconfig.ts
+├── tsconfig.node.json
+└── vite.config.ts
 ```
 
-For the project to build, **these files must exist with exact filenames**:
+Now let's dive into the `src/` folder and see what it contains.
 
-- `index.html` is the page template;
-- `src/index.jsx` is the JavaScript entry point.
+#### sections
 
-You may create subdirectories inside src.
+`CustomerReviews.tsx` - `Footer.tsx` - `Hero.tsx` - `PopularProducts.tsx` - `Services.tsx` - `SpecialOffer.tsx` - `Subscribe.tsx` - `SuperQuality.tsx`
 
-## Available Scripts
+The sections directory contains all the sections used in the application. Each section is a React component. The sections are imported in `src/App.tsx` and rendered in the application.
 
-In the project directory, you can run:
+#### components
 
-### `npm start`
+`Button.tsx` - `Nav.tsx` -`PopularProductCard.tsx` - `ReviewCard.tsx` - `ServiceCard.tsx` - `ShoeCard.tsx`
 
-Runs the app in the development mode.<br>
-Open [http://localhost:5173](http://localhost:5173) to view it in the browser.
+The components directory contains all the components used in the application.
 
-### `npm test`
+#### constants
 
-Launches the test runner in the interactive watch mode.<br>
+`index.ts`
 
-### `npm run build`
+This is a TypeScript code contains all the constants used in the application, specifically the Navbar & Footer Links (`navbarLinks`, `footerLinks`), the Hero Section' Shoes and Statistics (`shoes`, `statistics`), the Products (`products`), the Services (`services`), the reviews (`reviews`), the social links (`socialLinks`) constants.
 
-Builds the app for production to the `build` folder.<br>
+#### assets
 
-### `npm run eject`
+`icons/` - `images/` `react.svg`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+The public directory contains the media used in the application. The assets folder contains all the images and icons used in the application.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time.
+#### files
 
-## Installing a Dependency
+`App.tsx` - The App component is the root component of the application. It renders all the sections.
 
-You can install any dependencies (for example, React Router) with `npm`:
+`index.css` - The index.css file contains the global styles of the application.
 
-```sh
-npm install --save react-router
+`main.tsx` - The main.tsx file is the entry point of the application.
+
+`type.ts` - The type.ts file contains all the types used in the application.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## :space_invader: Technologies Used
+
+Nike web application is built using the following technologies:
+
+- [TypeScript](https://www.typescriptlang.org/): TypeScript is a typed superset of JavaScript that compiles to plain JavaScript.
+- [Vite.js](https://vitejs.dev/): Vite is a build tool that aims to provide a faster and leaner development experience for modern web projects.
+- [React](https://reactjs.org/): React is an open-source, front end, JavaScript library for building user interfaces or UI components.
+- [Tailwind CSS](https://tailwindcss.com/): Tailwind CSS is a utility-first CSS framework for rapidly building custom user interfaces.
+- [Vercel](https://vercel.com/): Vercel is a cloud platform for frontend developers, providing the frameworks, workflows, and infrastructure to build a faster, more personalized Web.
+
+[![tech](https://skillicons.dev/icons?i=ts,vite,react,tailwind,vercel)](https://skillicons.dev)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## :toolbox: Getting Started
+
+<!-- Installation -->
+
+### :gear: Installation and Run Locally
+
+#### Step 1:
+
+Download or clone this repo by using the link below:
+
+```bash
+ https://github.com/ladunjexa/nike-landing-page.git
 ```
 
-Alternatively you may use `yarn`:
+#### Step 2:
 
-```sh
-yarn add react-router
+**Nike Website** using NPM (Node Package Manager), therefore, make sure that Node.js is installed by execute the following command in consle
+
+```bash
+  node -v
 ```
 
-## License
+#### Step 3:
 
-MIT License
+Go to root folder and execute the following command in console to get nodemon the required packages:
 
-Copyright (c) 2023 DhiWise
+```bash
+npm install
+```
 
-Permission is hereby granted, to any person obtaining a copy of this software and associated documentation files (the "Software"),to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+#### Step 4:
 
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+Go to root folder and execute the following command in console to start the application locally:
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+```bash
+npm run dev
+```
 
-## DhiWise Support
+### React + TypeScript + Vite
 
-<a href="https://twitter.com/dhiwise"><img src="https://user-images.githubusercontent.com/35039342/55471524-8e24cb00-5627-11e9-9389-58f3d4419153.png" width="60" alt="DhiWise Twitter"></a>
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-<a href="https://www.youtube.com/c/DhiWise"><img src="https://cdn.vox-cdn.com/thumbor/0kpe316UpZWk53iw3bOLoJfF6hI=/0x0:1680x1050/1400x1400/filters:focal(706x391:974x659):format(gif)/cdn.vox-cdn.com/uploads/chorus_image/image/56414325/YTLogo_old_new_animation.0.gif" width="60" alt="DhiWise YouTube"></a>
+Currently, two official plugins are available:
 
-<a href="https://discord.gg/UPhCetBkVu"><img src="https://user-images.githubusercontent.com/47489894/183043664-b01aac56-0372-458a-bde9-3f2a6bded21b.png" width="60" alt="DhiWise Discord"></a>
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-<a href="https://docs.dhiwise.com/docs/react/intro"><img src="https://global-uploads.webflow.com/618e36726d3c0f19c9284e56/62383865d5477f2e4f6b6e2e_main-monogram-p-500.png" width="60" alt="DhiWise Documentation"></a>
+#### Expanding the ESLint configuration
+
+If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+
+- Configure the top-level `parserOptions` property like this:
+
+```js
+   parserOptions: {
+    ecmaVersion: 'latest',
+    sourceType: 'module',
+    project: ['./tsconfig.json', './tsconfig.node.json'],
+    tsconfigRootDir: __dirname,
+   },
+```
+
+- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
+- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
+- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## :camera: Screenshots
+
+![Mockup](.github/assets/nike-landing-page-mockup.png)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## :wave: Contributing
+
+<a href="https://github.com/ladunjexa/Rainblur-Portfolio-Showcase/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=ladunjexa/Job-Platform-App" />
+</a>
+
+Contributions are always welcome!
+
+See [`contributing.md`](https://contributing.md/) for ways to get started.
+
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+Don't forget to give the project a star! Thanks again!
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## :warning: License
+
+_Nike_ web application is open source and distributed under the [MIT License](LICENSE).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## :handshake: Contact
+
+If you want to contact me, you can reach me at [@ladunjexa](https://t.me/ladunjexa).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
